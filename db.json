@@ -3,11 +3,11 @@ echo '{
   "events": [
     {
       "id": 1,
-      "name": "Tech Conference",
+      "name": "Dune Part TWo",
       "date": "2026-06-15"
     },
     {
-      "id": 2,
+      "id": 2
       "name": "Music Festival",
       "date": "2026-07-20"
     }
