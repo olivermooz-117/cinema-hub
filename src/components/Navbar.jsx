@@ -107,8 +107,8 @@ const Navbar = () => {
             {/* Note: In the future, Person 5 can make this open a user menu */}
             <FaUser className="w-5 h-5 text-cinema-white-muted hover:text-cinema-purple-primary cursor-pointer transition" />
             
-          </div>
-          
+        </div>
+        
         </div> {/* END OF FLEX CONTAINER */}
         
       </div> {/* END OF INNER CONTAINER */}
