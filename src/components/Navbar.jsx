@@ -5,6 +5,7 @@
 // Import Link from React Router for navigation between pages
 // Link is like <a> tag but it doesn't refresh the page (faster!)
 import { Link } from 'react-router-dom';
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 
 // Import icons from react-icons library (you installed this earlier)
 // FaFilm = movie clapper board icon
