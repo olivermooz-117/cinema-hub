@@ -1,0 +1,16 @@
+echo '{
+  "users": [],
+  "events": [
+    {
+      "id": 1,
+      "name": "Tech Conference",
+      "date": "2026-06-15"
+    },
+    {
+      "id": 2,
+      "name": "Music Festival",
+      "date": "2026-07-20"
+    }
+  ],
+  "bookings": []
+}' > db.json
