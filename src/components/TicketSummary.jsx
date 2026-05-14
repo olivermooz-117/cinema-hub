@@ -6,7 +6,7 @@ function TicketSummary(props) {
     <p>Name: {props.name}</p>
 
 
-
+    <p>Email: {props.email}</p>
 
 
 
