@@ -1,0 +1,17 @@
+{
+  "users": [],
+  "events": [
+    {
+      "id": 1,
+      "name": "Dune Part TWo",
+      "date": "2026-06-15"
+    },
+    {
+      "id": 2
+      "name": "Music Festival",
+      "date": "2026-07-20"
+    }
+  ],
+      "id": "Ghost Busters"
+  "bookings": []
+}
