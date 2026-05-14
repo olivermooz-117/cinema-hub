@@ -9,6 +9,8 @@ function TicketSummary(props) {
     <p>Email: {props.email}</p>
 
 
+    <p>Tickets: {props.tickets}</p>
+
 
 
 
