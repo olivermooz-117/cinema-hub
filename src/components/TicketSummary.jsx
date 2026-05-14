@@ -1,4 +1,4 @@
-function TicketSummary() {
+function TicketSummary(props) {
   return (
     <div>
       <h2>Ticket Summary</h2>
