@@ -5,11 +5,17 @@ function BookingForm() {
   const [email, setEmail] = useState("");
   const [tickets, setTickets] = useState(1);
 
+
+  function handleSubmit(e) {
+  e.preventDefault();
+}
+
+
   return (
     <div>
       <h1>Book Movie Tickets</h1>
 
-   <form>
+   <form onSubmit={handleSubmit}>
      <input 
        type="text" 
        value={name}
