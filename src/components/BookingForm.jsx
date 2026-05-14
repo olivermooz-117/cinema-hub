@@ -20,6 +20,10 @@ function BookingForm() {
   }
 
   setShowMessage(true);
+
+  setName("");
+  setEmail("");
+  setTickets(1);
 }
 
 
