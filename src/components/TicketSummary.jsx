@@ -1,6 +1,6 @@
 function TicketSummary(props) {
   return (
- <div>
+ <div className="summary-box">
     <h2>Ticket Summary</h2>
 
     <p>Name: {props.name}</p>
