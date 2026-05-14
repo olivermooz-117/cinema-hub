@@ -46,10 +46,10 @@ const Signup = () => {
     if (!validateForm()) return;
 
     try {
-      signup(email, password, name);
+      await signup(email, password, name);
       navigate('/');  // Go to home page after signup
-    } catch (err) {
-      setError('Signup failed. Please try again.');
+    } catch (error) {
+      setError(error?.message || 'Signup failed. Please try again.');
     }
   };
 
