@@ -6,6 +6,9 @@ function BookingForm() {
   const [tickets, setTickets] = useState(1);
 
 
+  const pricePerTicket = 1500;
+  const totalPrice = tickets * pricePerTicket;
+
   function handleSubmit(e) {
   e.preventDefault();
   if (!name || !email) {
