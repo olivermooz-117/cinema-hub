@@ -48,6 +48,15 @@ function BookingForm() {
 
        <button>Book Ticket</button>
  </form>
+
+
+ <TicketSummary
+     name={name}
+     email={email}
+     tickets={tickets}
+     totalPrice={totalPrice}
+    />
+
     </div>
   );
 }
