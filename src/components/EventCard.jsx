@@ -1,6 +1,5 @@
 // Import React - this is always needed to create React components
 // We don't need to import useState or useEffect because this is a simple display component
-import React from 'react';
 // Import the CSS file for styling this component
 import './EventCard.css';
 
