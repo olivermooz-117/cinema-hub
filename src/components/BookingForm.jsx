@@ -8,12 +8,33 @@ function BookingForm() {
   return (
     <div>
       <h1>Book Movie Tickets</h1>
-       <form>
-      <input type="text" placeholder="Name" />
-      <input type="email" placeholder="Email" />
-      <input type="number" min="1" />
-      <button>Book Ticket</button>
-    </form>
+
+   <form>
+     <input 
+       type="text" 
+       value={name}
+       onChange={(e) => setName(e.target.value)}
+       placeholder="Name"
+       />
+
+
+      <input 
+        type="email" 
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        placeholder="Email"
+        />
+
+
+      <input 
+         type="number" 
+         value={tickets}
+         onChange={(e) => setTickets(Number(e.target.value))}
+         min="1" 
+         />
+
+       <button>Book Ticket</button>
+ </form>
     </div>
   );
 }
