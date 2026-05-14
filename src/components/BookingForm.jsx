@@ -66,7 +66,9 @@ function BookingForm() {
      totalPrice={totalPrice}
     />
 
-    </div>
+  {showMessage && <ConfirmationModal name={name} />}  
+
+ </div>
   );
 }
 
