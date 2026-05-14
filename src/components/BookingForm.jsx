@@ -8,7 +8,7 @@ function BookingForm() {
 
   const [showMessage, setShowMessage] = useState(false);
 
-  
+
   const pricePerTicket = 1500;
   const totalPrice = tickets * pricePerTicket;
 
@@ -18,6 +18,8 @@ function BookingForm() {
     alert("Please fill in all fields");
     return;
   }
+
+  setShowMessage(true);
 }
 
 
