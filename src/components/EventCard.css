@@ -1,0 +1,139 @@
+/* This file contains all the styling for the EventCard component */
+
+/* Style for the main card container */
+.event-card {
+  /* Display as flex to arrange image and details side by side */
+    display: flex;
+  /* White background for the card */
+    background: white;
+  /* Rounded corners */
+    border-radius: 12px;
+  /* Prevents content from overflowing outside the rounded corners */
+    overflow: hidden;
+  /* Adds space between cards when multiple are stacked */
+    margin-bottom: 20px;
+  /* Adds a subtle shadow to make the card stand out */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Changes cursor to pointer when hovering over card (like a link) */
+    cursor: pointer;
+  /* Smooth transition for hover effects */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect - when user puts mouse over the card */
+.event-card:hover {
+  /* Slightly lifts the card up */
+    transform: translateY(-5px);
+  /* Makes the shadow bigger and darker */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for the movie poster image */
+.event-image {
+  /* Fixed width for all images */
+    width: 200px;
+  /* Fixed height for all images */
+    height: 300px;
+  /* Makes sure image covers the area without distortion */
+    object-fit: cover;
+  /* Prevents image from shrinking if there's not enough space */
+    flex-shrink: 0;
+}
+
+/* Container for all text details */
+.event-details {
+  /* Takes up remaining space after image */
+    flex: 1;
+  /* Adds padding inside the details section */
+    padding: 20px;
+}
+
+/* Style for the movie title */
+.event-details h3 {
+  /* Removes default margin */
+    margin: 0 0 10px 0;
+  /* Dark gray color */
+    color: #333;
+  /* Larger font size for title */
+    font-size: 1.5rem;
+}
+
+/* Style for all paragraph elements in event-details */
+.event-date-time,
+.event-venue,
+.event-price,
+.event-seats {
+  /* Adds space between each line */
+    margin: 8px 0;
+  /* Gray color for secondary text */
+    color: #666;
+  /* Font size */
+    font-size: 0.95rem;
+}
+
+/* Special style for the description text */
+.event-description {
+  /* Adds space above description */
+    margin: 10px 0;
+  /* Lighter gray color for description */
+    color: #888;
+  /* Makes description text slanted/italic */
+    font-style: italic;
+  /* Smaller font size for description */
+    font-size: 0.9rem;
+}
+
+/* Style for the Book Now button */
+.book-btn {
+  /* Adds space above the button */
+    margin-top: 15px;
+  /* Adds padding inside the button (top/bottom, left/right) */
+    padding: 10px 20px;
+  /* Removes default button border */
+    border: none;
+  /* Rounds the button corners */
+    border-radius: 6px;
+  /* Sets background color to a nice orange */
+    background-color: #ff6b35;
+  /* Makes text white */
+    color: white;
+  /* Changes cursor to pointer on hover */
+    cursor: pointer;
+  /* Font size */
+    font-size: 14px;
+  /* Makes font bold */
+    font-weight: bold;
+  /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the Book Now button */
+.book-btn:hover {
+  /* Darkens the button color when hovering */
+    background-color: #e55a2b;
+}
+
+/* Make it responsive for mobile devices */
+/* When screen width is 768px or less */
+@media (max-width: 768px) {
+  /* Change card layout from row to column on mobile */
+    .event-card {
+    flex-direction: column;
+    }
+
+  /* Make image full width on mobile */
+    .event-image {
+    width: 100%;
+    height: auto;
+        }
+        
+  /* Reduce padding on mobile */
+    .event-details {
+    padding: 15px;
+    }
+    
+  /* Smaller title on mobile */
+    .event-details h3 {
+    font-size: 1.2rem;
+    }
+}
