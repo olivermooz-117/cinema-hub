@@ -6,6 +6,9 @@ function BookingForm() {
   const [tickets, setTickets] = useState(1);
 
 
+  const [showMessage, setShowMessage] = useState(false);
+
+  
   const pricePerTicket = 1500;
   const totalPrice = tickets * pricePerTicket;
 
