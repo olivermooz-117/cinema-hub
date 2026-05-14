@@ -8,6 +8,10 @@ function BookingForm() {
 
   function handleSubmit(e) {
   e.preventDefault();
+  if (!name || !email) {
+    alert("Please fill in all fields");
+    return;
+  }
 }
 
 
