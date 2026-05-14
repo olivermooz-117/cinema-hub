@@ -9,9 +9,21 @@ import './App.css';
 function App() {
   // Sample movie data
   const movies = [
-    { id: 1, title: "Dune: Part Two", year: 2024, rating: 8.5, posterUrl: "https://via.placeholder.com/300x450" },
-    { id: 2, title: "Kung Fu Panda 4", year: 2024, rating: 7.2, posterUrl: "https://via.placeholder.com/300x450" },
-    { id: 3, title: "Ghostbusters: Frozen Empire", year: 2024, rating: 6.8, posterUrl: "https://via.placeholder.com/300x450" },
+    {
+      id: 1,
+      title: "Dune: Part Two",
+      image: "https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dnbOE6h8jRRQJ.jpg"
+    },
+    {
+      id: 2,
+      title: "Kung Fu Panda 4",
+      image: "https://image.tmdb.org/t/p/w500/kDp1v12n2FJtv5AcfOdJJuGBAkL.jpg",
+    },
+    {
+      id: 3,
+      title: "Ghostbusters: Frozen Empire",
+      image: "https://image.tmdb.org/t/p/w500/5i6DfZp7z2jJ0r5LevvYc4jZgB.jpg",
+    }
   ];
 
   return (
