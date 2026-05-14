@@ -1,22 +1,23 @@
 import { Navigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from './context/AuthContext';
 
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
 
-  // Show loading spinner while checking auth
   if (loading) {
     return <div>Loading...</div>;
   }
 
-  // If no user, send to login page
   if (!user) {
-    return <Navigate to="/login" />;
+    return <Navigate to="/login" replace />;
   }
 
-  // If user exists, show the page
   return children;
+};
+
+ProtectedRoute.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default ProtectedRoute;
