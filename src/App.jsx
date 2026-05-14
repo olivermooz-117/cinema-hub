@@ -1,5 +1,5 @@
 // src/App.jsx - SIMPLE TEST VERSION
-import React from 'react';
+
 import { Container, Row, Col } from 'react-bootstrap';
 import NavigationBar from './components/Navbar';
 import MovieCard from './components/MovieCard';
