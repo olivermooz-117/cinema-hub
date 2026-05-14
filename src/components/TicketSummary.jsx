@@ -12,11 +12,9 @@ function TicketSummary(props) {
     <p>Tickets: {props.tickets}</p>
 
 
-<p>Total Price: Ksh {props.totalPrice}</p>
+    <p>Total Price: Ksh {props.totalPrice}</p>
 
-
-
-    </div>
+ </div>
   );
 }
 
